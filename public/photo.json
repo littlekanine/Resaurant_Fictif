@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"src": "/images/restau1.jpg",
+		"alt": "Restaurant 1",
+		"width": 400,
+		"height": 100
+	},
+	{
+		"id": 2,
+		"src": "/images/restau2.jpg",
+		"alt": "Restaurant 1",
+		"width": 400,
+		"height": 100
+	},
+	{
+		"id": 3,
+		"src": "/images/restau3.jpg",
+		"alt": "Restaurant 1",
+		"width": 400,
+		"height": 100
+	},
+	{
+		"id": 4,
+		"src": "/images/restau4.jpeg",
+		"alt": "Restaurant 1",
+		"width": 400,
+		"height": 100
+	}
+]

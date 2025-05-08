@@ -1,0 +1,82 @@
+{
+	"menu": {
+		"entrees": [
+			{
+				"id": 1,
+				"name": "Salade César",
+				"price": 8.5,
+				"description": "Une salade classique avec laitue, croûtons, parmesan et sauce César."
+			},
+			{
+				"id": 2,
+				"name": "Soupe à l'oignon",
+				"price": 6.0,
+				"description": "Une soupe traditionnelle française garnie de fromage gratiné."
+			},
+			{
+				"id": 3,
+				"name": "Bruschetta",
+				"price": 7.0,
+				"description": "Pain grillé garni de tomates fraîches, basilic et huile d'olive."
+			},
+			{
+				"id": 4,
+				"name": "Carpaccio de bœuf",
+				"price": 9.5,
+				"description": "Fines tranches de bœuf cru marinées avec citron et huile d'olive."
+			}
+		],
+		"plats": [
+			{
+				"id": 5,
+				"name": "Filet de saumon",
+				"price": 15.0,
+				"description": "Filet de saumon grillé servi avec légumes de saison."
+			},
+			{
+				"id": 6,
+				"name": "Poulet rôti",
+				"price": 13.5,
+				"description": "Poulet rôti tendre accompagné de pommes de terre sautées."
+			},
+			{
+				"id": 7,
+				"name": "Lasagnes végétariennes",
+				"price": 12.0,
+				"description": "Lasagnes riches en légumes et fromage fondant."
+			},
+			{
+				"id": 8,
+				"name": "Entrecôte grillée",
+				"price": 18.0,
+				"description": "Entrecôte de bœuf grillée servie avec sauce au poivre."
+			}
+		],
+		"desserts": [
+			{
+				"id": 9,
+				"name": "Tiramisu",
+				"price": 6.5,
+				"description": "Dessert italien à base de mascarpone, café et cacao."
+			},
+			{
+				"id": 10,
+				"name": "Crème brûlée",
+				"price": 5.5,
+				"description": "Crème vanillée avec une fine couche de caramel croquant."
+			},
+			{
+				"id": 11,
+				"name": "Fondant au chocolat",
+				"price": 7.0,
+				"description": "Gâteau au chocolat avec un cœur fondant."
+			},
+			{
+				"id": 12,
+				"name": "Salade de fruits",
+				"price": 5.0,
+				"description": "Mélange frais de fruits de saison."
+			}
+		]
+	}
+}
