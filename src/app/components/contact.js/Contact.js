@@ -6,7 +6,7 @@ import MapComponent from "../map/Map";
 const Contact = () => {
     return (
         <div>
-            <section className="flex flex-col items-center justify-center w-full bg-noir gap-2">
+            <section className="flex flex-col items-center justify-center w-full bg-noir gap-2 p-10">
                 <div className="flex flex-row justify-center h-full w-full text-center gap-8">
                     <div className="flex gap-4 flex-col w-1/2 p-4 items-center justify-center">
                         <div className="flex bg-sombre flex-col  rounded-sm gap-4 p-4">
@@ -16,19 +16,19 @@ const Contact = () => {
                                 <label htmlFor="name" className="text-white text-left">
                                     Nom
                                 </label>
-                                <input type="text" id="name" name="name" required className="w-1/2 p-2 bg-black outline-none  " />
+                                <input type="text" id="name" name="name" required className="w-full p-2 bg-black outline-none border border-gray" />
                                 <div className="flex flex-row gap-4">
                                     <div className="flex flex-col w-1/2 gap-2">
                                         <label htmlFor="date" className="text-white text-left">
                                             Date
                                         </label>
-                                        <input type="date" id="date" name="date" required className="w-full p-2 outline-none bg-black  text-white" />
+                                        <input type="date" id="date" name="date" required className="w-full p-2 outline-none bg-black  text-white border border-gray" />
                                     </div>
                                     <div className="flex flex-col w-1/2 gap-2">
                                         <label htmlFor="time" className="text-white text-left">
                                             Heure
                                         </label>
-                                        <input type="time" id="time" name="time" required className="w-full p-2 outline-none bg-black  text-white" />
+                                        <input type="time" id="time" name="time" required className="w-full p-2 outline-none bg-black  text-white border border-gray" />
                                     </div>
                                 </div>
                                 <div className="flex flex-row gap-4">
@@ -36,27 +36,27 @@ const Contact = () => {
                                         <label htmlFor="guests" className="text-white text-left">
                                             Nombre de personnes
                                         </label>
-                                        <input type="number" id="guests" name="guests" required className="w-full p-2 outline-none bg-black  text-white" />
+                                        <input type="number" id="guests" name="guests" required className="w-full p-2 outline-none bg-black  text-white border border-gray" />
                                     </div>
                                     <div className="flex flex-col w-1/2 gap-2">
                                         <label htmlFor="phone" className="text-white text-left">
                                             Téléphone
                                         </label>
-                                        <input type="tel" id="phone" name="phone" required className="w-full p-2 outline-none bg-black  text-white" />
+                                        <input type="tel" id="phone" name="phone" required className="w-full p-2 outline-none bg-black  text-white border border-gray" />
                                     </div>
                                 </div>
                                 <div className="flex gap-2 flex-col w-full">
                                     <label htmlFor="email" className="text-white text-left">
                                         Messsage optionel
                                     </label>
-                                    <textarea type="email" id="email" name="email" required className="w-full p-2 outline-none bg-black  text-white" />
+                                    <textarea type="email" id="email" name="email" required className="w-full p-2 outline-none bg-black  text-white border border-gray" />
                                 </div>
                             </form>
-                            <Button text={"Réserver maintenant"} className="bg-gold text-black w-full p-2 rounded-sm hover:bg-gold/80 transition-all duration-300 ease-in-out hover:scale-103" />
+                            <Button text={"Réserver maintenant"} className="bg-gold text-black w-full p-2 rounded-sm hover:bg-gold/80 transition-all duration-300 ease-in-out hover:scale-103 cursor-pointer" />
                         </div>
                     </div>
                     <div className=" flex flex-col text-white gap-4 w-1/2 p-4">
-                        <h2 className="text-yellow-500 text-2xl font-semibold text-left">Informations</h2>
+                        <h2 className="text-gold text-2xl font-semibold text-left">Informations</h2>
 
                         <div className="w-full gap-2">
                             <h3 className="text-white text-lg font-medium text-left">Heures d'ouverture</h3>

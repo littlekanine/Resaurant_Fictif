@@ -13,6 +13,7 @@
     --color-gold: #d8b059;
     --color-sombre: #111827;
     --color-noir: #0d121d;
+    --color-gray: #1F2937;
     --font-sans: "Nunito Sans", sans-serif;
     --font-mono: "Courier New", monospace;
     --font-instrument: "Instrument Serif";
@@ -83,3 +84,4 @@ Button {
     font-family: var(--font-inter);
     font-weight: 900;
 }
+
