@@ -44,12 +44,12 @@ const MenuSection = () => {
 						onClick={() => setSelectedCategory('desserts')}
 					/>
 				</div>
-				<div className="flex flex-col gap-8 justify-center w-full h-full">
+				<div className="flex flex-col gap-8 justify-center w-full h-full lg:p-8 lg:w-3/4">
 					{displayedItems.map((plat) => (
 						<div key={plat.id} className="flex flex-row items-center justify-center  h-auto w-full text-center">
 							<div className="flex flex-col w-full gap-4">
-								<h4 className="text-white font-inter text-sm text-left sm:text-base  ">{plat.name}</h4>
-								<p className="text-white font-inter text-left text-xs sm:text-sm">{plat.description}</p>
+								<h4 className="text-white font-inter text-sm text-left sm:text-base lg:text-2xl ">{plat.name}</h4>
+								<p className="text-white font-inter text-left text-xs sm:text-sm lg:text-base">{plat.description}</p>
 							</div>
 							<div className="flex flex-col text-right w-1/4">
 								<p className="text-gold font-inter text-sm sm:text-base">{plat.price}$</p>
