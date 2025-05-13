@@ -35,8 +35,8 @@ const GallerieInstagram = () => {
     return (
         <section className="flex flex-col bg-sombre items-center justify-center w-full bg-sombre p-12 gap-8">
             <div className="flex flex-col items-center justify-center gap-2">
-                <h2 className="text-gold text-3xl">Notre Galerie Instagram</h2>
-                <p className="text-white text-center">Découvrez nos plats et notre ambiance sur Instagram !</p>
+                <h2 className="text-gold text-2xl">Notre Galerie Instagram</h2>
+                <p className="text-white text-center text-sm">Découvrez nos plats et notre ambiance sur Instagram !</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {photos.map((photo) => (

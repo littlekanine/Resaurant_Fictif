@@ -20,12 +20,12 @@ const MenuSection = () => {
 
 	return (
 		<div className="flex w-full">
-			<section className="flex flex-col items-center justify-center w-full bg-noir p-8 gap-10 p-20">
+			<section className="flex flex-col items-center justify-center w-full bg-noir p-8 gap-4">
 				<div className="flex flex-col items-center justify-center h-full w-full text-center gap-4">
 					<h3 className="flex font-inter text-gold text-3xl w-full justify-center ">Notre Menu</h3>
 					<p className="text-white font-inter text-left"> Une sélection de nos plats signatures</p>
 				</div>
-				<div className="flex">
+				<div className="flex w-full sm:justify-center sm:pb-4">
 					<Button
 						text="Entrées"
 						className={` ${
@@ -44,15 +44,15 @@ const MenuSection = () => {
 						onClick={() => setSelectedCategory('desserts')}
 					/>
 				</div>
-				<div className="flex flex-col gap-8 justify-center w-3/4  h-full p-4">
+				<div className="flex flex-col gap-8 justify-center w-full h-full">
 					{displayedItems.map((plat) => (
 						<div key={plat.id} className="flex flex-row items-center justify-center  h-auto w-full text-center">
-							<div className="flex flex-col w-full">
-								<h4 className="text-white font-inter text-2xl text-left">{plat.name}</h4>
-								<p className="text-white font-inter text-left">{plat.description}</p>
+							<div className="flex flex-col w-full gap-4">
+								<h4 className="text-white font-inter text-sm text-left sm:text-base  ">{plat.name}</h4>
+								<p className="text-white font-inter text-left text-xs sm:text-sm">{plat.description}</p>
 							</div>
 							<div className="flex flex-col text-right w-1/4">
-								<p className="text-gold font-inter text-xl">{plat.price}$</p>
+								<p className="text-gold font-inter text-sm sm:text-base">{plat.price}$</p>
 							</div>
 						</div>
 					))}
