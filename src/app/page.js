@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import HerroBanner from './components/herroBanner/HerroBanner';
 import About from './components/about/About';

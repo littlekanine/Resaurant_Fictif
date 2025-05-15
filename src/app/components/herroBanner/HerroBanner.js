@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Button from '../button/Button';
+import Link from 'next/link';
 
 const HerroBanner = () => {
 	return (
@@ -9,7 +10,7 @@ const HerroBanner = () => {
 
 			<div className="relative z-10 flex flex-col items-center justify-center h-full w-full text-center gap-4 px-4">
 				<h1 className="flex text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[100px] text-white w-full justify-center items-center font-instrument">
-					LE<span className="text-gold ">&nbsp;SAINT&nbsp;</span> SAUVAGE
+					LE<span className="text-gold ">&nbsp;SAINT&nbsp;</span> CORRECT
 				</h1>
 
 				<h2 className="text-white font-instrument-serif text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-[25px]">Une expérience culinaire exceptionnelle à Toulouse</h2>
@@ -20,12 +21,24 @@ const HerroBanner = () => {
 							'flex justify-center items-center w-[150px] h-[40px] sm:w-[180px] sm:h-[50px] md:w-[198px] md:h-[54px] rounded-[5px] backdrop-blur-lg border-white border-2 text-white hover:bg-gold transition-all duration-300 hover:text-black cursor-pointer hover:scale-105 hover:border-none'
 						}
 						text={'Découvrir le menu'}
+						onClick={() => {
+							const menuSection = document.getElementById('menu');
+							if (menuSection) {
+								menuSection.scrollIntoView({ behavior: 'smooth' });
+							}
+						}}
 					/>
 					<Button
 						className={
 							'flex justify-center items-center w-[150px] h-[40px] sm:w-[180px] sm:h-[50px] md:w-[198px] md:h-[54px] bg-transparent backdrop-blur-lg border-white border-2 rounded-[5px] text-white hover:bg-gold transition-all duration-300 hover:text-black cursor-pointer hover:scale-105 hover:border-none'
 						}
 						text={'Réserver une table'}
+						onClick={() => {
+							const menuSection = document.getElementById('contact');
+							if (menuSection) {
+								menuSection.scrollIntoView({ behavior: 'smooth' });
+							}
+						}}
 					/>
 				</div>
 			</div>

@@ -5,12 +5,12 @@ import datas from '../../../../public/photo.json';
 const About = () => {
 	return (
 		<div>
-			<section className="flex items-center justify-center flex-col bg-sombre p-8 xl:flex-row gap-4 w-full h-auto lg:gap-16">
+			<section id="about" className="flex items-center justify-center flex-col bg-sombre p-8 xl:flex-row gap-4 w-full h-auto lg:gap-16">
 				<div className="flex flex-col items-center justify-center h-full w-full text-center gap-4 lg:w-3/4 lg:p-4">
 					<div className="flex flex-col h-full w-full gap-4 lg:w-3/4">
 						<h3 className="flex font-inter text-gold text-3xl text-left w-full ">Notre histoire</h3>
 						<p className="flex w-full text-white font-inter text-left text-sm md:text-lg lg:text-lg">
-							Fondé en 2010 par le chef renommé Michel Laurent, Le Saint Sauvage est né dune passion pour les saveurs authentiques et les produits
+							Fondé en 2010 par le chef renommé Michel Laurent, Le Saint Correct est né dune passion pour les saveurs authentiques et les produits
 							d&#39;exception. Notre restaurant allie techniques culinaires traditionnelles et créativité contemporaine.{' '}
 						</p>
 						<p className="flex w-full text-white font-inter text-left text-sm md:text-lg lg:text-lg">

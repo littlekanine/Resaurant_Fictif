@@ -5,7 +5,7 @@ const Footer = () => {
 		<footer className="flex footer flex-col gap-6 p-4 bg-sombre items-center justify-between w-full md:flex-row">
 			<div className="flex flex-col">
 				<h5 className="text-white text-sm">
-					LE<span className="text-gold text-sm">&nbsp;SAINT&nbsp;</span> SAUVAGE
+					LE<span className="text-gold text-sm">&nbsp;SAINT&nbsp;</span> CORRECT
 				</h5>
 				<p className="text-white text-xs">Une expérience culinaire exceptionnelle à Toulouse</p>
 			</div>
@@ -22,7 +22,8 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className="flex flex-col items-center text-right">
-				<p className="text-white text-xs">© 2025 Le Saint Sauvage. Tous droits réservés.</p>
+				<p className="text-white text-xs">© 2025 Le Saint Correct. Tous droits réservés.</p>
+				<p className="text-white text-xs">Elia Kopff</p>
 			</div>
 		</footer>
 	);

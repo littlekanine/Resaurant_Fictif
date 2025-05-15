@@ -2,25 +2,18 @@
 
 import React from 'react';
 import Button from '../button/Button';
-// import menuData from '../../../../public/menu.json';
 import { useEffect, useState } from 'react';
+import menuData from '../../../../public/menu.json';
 
 const MenuSection = () => {
 	const [menu, setMenu] = useState({ menu: {} });
 	const [selectedCategory, setSelectedCategory] = useState('entrees');
 
-	useEffect(() => {
-		fetch('/menu.json')
-			.then((response) => response.json())
-			.then((data) => setMenu(data))
-			.catch((error) => console.error('Erreur lors du chargement du menu :', error));
-	}, []);
-
-	const displayedItems = menu.menu[selectedCategory] || [];
+	const displayedItems = menuData.menu[selectedCategory] || [];
 
 	return (
 		<div className="flex w-full">
-			<section className="flex flex-col items-center justify-center w-full bg-noir p-8 gap-4">
+			<section id="menu" className="flex flex-col items-center justify-center w-full bg-noir p-8 gap-4">
 				<div className="flex flex-col items-center justify-center h-full w-full text-center gap-4">
 					<h3 className="flex font-inter text-gold text-3xl w-full justify-center ">Notre Menu</h3>
 					<p className="text-white font-inter text-left"> Une sélection de nos plats signatures</p>
